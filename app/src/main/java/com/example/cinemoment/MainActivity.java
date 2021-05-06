@@ -18,5 +18,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
 
     }
+    public void Feedback(View view){
+        Intent i = new Intent(this,CustomerFeedback.class);
+        startActivity(i);
+
+    }
 
 }
