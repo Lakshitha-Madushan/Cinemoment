@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">CINEMOMENT</string>
+    <string name="wedding_packages">WEDDING PACKAGES</string>
+    <string name="menu">menu</string>
+    <string name="back">back</string>
+    <string name="add_a_package">ADD A PACKAGE</string>
+    <string name="gold">GOLD PACKAGE</string>
+    <string name="location_shoot_wedding_ceremony_reception_2_camera_cinematic_highlight">Bride and Groom Preparation, Location shoot, Wedding ceremony, Reception, 2 Camera, 3-5 min Cinematic Highlight, Upto 90min FULL HD video</string>
+    <string name="delete">delete</string>
+    <string name="edit">edit</string>
+    <string name="book_now">book now</string>
+    <string name="cinemoment">CINEMOMENT</string>
+    <string name="make_an_appointment">MAKE AN APPOINTMENT</string>
+    <string name="create_package">CREATE PACKAGE</string>
+    <string name="wedding_films">WEDDING FILMS</string>
+    <string name="wedding">WEDDING</string>
+    <string name="preshoot">PRESHOOT</string>
+    <string name="engagement">ENGAGEMENT</string>
+    <string name="home_coming">HOME COMING</string>
+    <string name="silver">SILVER</string>
+    <string name="platinum">PLATINUM</string>
+    <string name="goldp">GOLD</string>
+    <string name="edit_package">EDIT PACKAGE</string>
+    <string name="add">Add</string>
+    <string name="investment_70_000_lkr">INVESTMENT 70,000 LKR</string>
+    <string name="update">update</string>
+    <string name="yes">Yes</string>
+
+    <string-array name="packageType">
+        <item>Choose a Package Type</item>
+        <item>Wedding</item>
+        <item>Home Coming</item>
+        <item>PreShoot</item>
+        <item>Engagement</item>
+    </string-array>
+
+    <string-array name="cameras">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+</resources>
