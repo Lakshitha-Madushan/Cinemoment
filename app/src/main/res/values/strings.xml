@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">CINEMOMENT</string>
+    <string name="menu">MENU</string>
+    <string name="update_profile">UPDATE PROFILE</string>
+    <string name="log_in">log In</string>
+    <string name="my_profile">My Profile</string>
+    <string name="my_appointment">My Appointment</string>
+    <string name="my_bookings">My Bookings</string>
+    <string name="notifications">Notifications</string>
+    <string name="faq">FAQ</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="sign_in">Sign in</string>
+    <string name="my_profile1">MY PROFILE</string>
+    <string name="my_appointments">My Appointments</string>
+    <string name="don_t_have_an_account_sign_up_here">Don\'t have an account? Sign up here</string>
+    <string name="pawan_rathnayake">Pawan Rathnayake</string>
+    <string name="pawan12_gmail_com">pawan12@gmail.com</string>
+    <string name="_0711234598">0711234598</string>
+</resources>
