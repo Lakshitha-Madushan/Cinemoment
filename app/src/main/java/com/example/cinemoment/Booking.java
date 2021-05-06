@@ -1,6 +1,5 @@
 package com.example.cinemoment;
 
-import java.sql.Time;
 import java.util.Date;
 
 public class Booking {
@@ -9,7 +8,7 @@ public class Booking {
     private String brdName;
     private Integer contact;
     private Date date;
-    private Time time;
+    private String time;
     private String address;
     private String agenda;
 
@@ -45,15 +44,15 @@ public class Booking {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(String s) {
         this.date = date;
     }
 
-    public Time getTime() {
+    public String getTime() {
         return time;
     }
 
-    public void setTime(Time time) {
+    public void setTime(String time) {
         this.time = time;
     }
 
@@ -72,4 +71,6 @@ public class Booking {
     public void setAgenda(String agenda) {
         this.agenda = agenda;
     }
+
+
 }
