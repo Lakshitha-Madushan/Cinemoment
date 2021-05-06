@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">CINEMOMENT</string>
+    <string name="make_a_booking">MAKE A BOOKING</string>
+    <string name="couple_details">Couple Details</string>
+    <string name="adam">Adam</string>
+    <string name="groom_s_full_name">Groom\'s Full Name</string>
+    <string name="inputName2">Groom\'s Full Name</string>
+    <string name="hint">Maria</string>
+    <string name="inputPhone">Contact Number</string>
+    <string name="subTitle2">Function name</string>
+    <string name="Subtitle2">Function Details</string>
+    <string name="inputDate">Date</string>
+    <string name="Autofillhint">dd/mm/yyyy</string>
+    <string name="setDate">date</string>
+    <string name="time">HH.MM</string>
+    <string name="inputTime">12.12</string>
+    <string name="address">Address</string>
+    <string name="agenda">Agenda</string>
+    <string name="button3">Book Now</string>
+    <string name="menubtn2">Button</string>
+    <string name="titlepayment">PAYMENT</string>
+    <string name="subtitle1Pay">Your Package Details</string>
+    <string name="packageName" />
+    <string name="packagePrice" />
+</resources>

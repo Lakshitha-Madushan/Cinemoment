@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1010935443985",
+    "project_id": "cinemoment-780f4",
+    "storage_bucket": "cinemoment-780f4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1010935443985:android:5278bab49489d1b30137b0",
+        "android_client_info": {
+          "package_name": "com.example.cinemoment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1010935443985-e3741e237acqfh163vrsvnlgufqf93ej.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXET1WjoCMDSxnXB4cxRLCeLgxYda5OWY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1010935443985-e3741e237acqfh163vrsvnlgufqf93ej.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
