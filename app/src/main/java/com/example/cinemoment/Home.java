@@ -19,7 +19,7 @@ public class Home extends AppCompatActivity {
     }
 
     public void Packages(View view){
-        Intent i =new Intent(this,WeddingPackages.class);
+        Intent i =new Intent(this,PackageList.class);
         startActivity(i);
     }
 

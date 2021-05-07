@@ -51,11 +51,13 @@
 
     <ListView
         android:id="@+id/pkListView"
-        android:layout_width="382dp"
-        android:layout_height="444dp"
+        android:layout_width="379dp"
+        android:layout_height="534dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.551" />
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        app:layout_constraintVertical_bias="0.51" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CINEMOMENT">
-        <activity android:name=".PackageList"></activity>
+        <activity android:name=".PackageList" />
         <activity android:name=".EditPackage" />
         <activity android:name=".ViewPackage" />
         <activity android:name=".WeddingPackages" />

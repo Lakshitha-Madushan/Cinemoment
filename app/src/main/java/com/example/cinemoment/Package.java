@@ -58,4 +58,9 @@ public class Package {
     public void setPkAmount(int pkAmount) {
         this.pkAmount = pkAmount;
     }
+
+    public String toString(){
+        return this.pkType + "\n" + "Package Name : " + pkName;
+    }
+
 }
