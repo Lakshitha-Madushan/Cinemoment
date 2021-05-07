@@ -7,7 +7,7 @@ public class Booking {
     private String grmName;
     private String brdName;
     private Integer contact;
-    private Date date;
+    private String date;
     private String time;
     private String address;
     private String agenda;
@@ -40,12 +40,12 @@ public class Booking {
         this.contact = contact;
     }
 
-    public Date getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(String s) {
-        this.date = date;
+    public void setDate(String date) {
+       this.date = date;
     }
 
     public String getTime() {
