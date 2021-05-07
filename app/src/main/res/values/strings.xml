@@ -22,4 +22,11 @@
     <string name="subtitle1Pay">Your Package Details</string>
     <string name="packageName" />
     <string name="packagePrice" />
+    <string name="payment">PAYMENT</string>
+    <string name="packageDt">Package Details</string>
+    <string name="package_name">Package Name....</string>
+    <string name="pName">Package Name...</string>
+    <string name="package_price">Package Price...</string>
+    <string name="pAdvance">Advance Payment...</string>
+    <string name="viewPdetails">View Package Details</string>
 </resources>

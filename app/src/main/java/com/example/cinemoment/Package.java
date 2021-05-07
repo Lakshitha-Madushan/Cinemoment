@@ -1,40 +1,41 @@
 package com.example.cinemoment;
 
 public class Package {
-    private String Name;
-    private Double Price;
-    private Double Advance;
+
+    private String pName;
+    private Double pPrice;
+    private Double pAdvance;
+
+    public Package(String pName, Double pPrice, Double pAdvance) {
+        this.pName = pName;
+        this.pPrice = pPrice;
+        this.pAdvance = pAdvance;
+    }
 
     public Package() {
     }
 
-    public Package(String name, Double price, Double advance) {
-        Name = name;
-        Price = price;
-        Advance = advance;
+    public String getPName() {
+        return pName;
     }
 
-    public String getName() {
-        return Name;
+    public Double getPPrice() {
+        return pPrice;
     }
 
-    public void setName(String name) {
-        Name = name;
+    public Double getPAdvance() {
+        return pAdvance;
     }
 
-    public Double getPrice() {
-        return Price;
+    public void setPName(String pName) {
+        this.pName = pName;
     }
 
-    public void setPrice(Double price) {
-        Price = price;
+    public void setPPrice(Double pPrice) {
+        this.pPrice = pPrice;
     }
 
-    public Double getAdvance() {
-        return Advance;
-    }
-
-    public void setAdvance(Double advance) {
-        Advance = advance;
+    public void setPAdvance(Double pAdvance) {
+        this.pAdvance = pAdvance;
     }
 }

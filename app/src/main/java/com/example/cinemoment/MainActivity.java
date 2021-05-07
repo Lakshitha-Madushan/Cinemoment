@@ -41,8 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void onClick(View view) {
-        Intent intent = new Intent(MainActivity.this,PaymentUi.class);
-        startActivity(intent);
+
 
         dbRef = FirebaseDatabase.getInstance("https://cinemoment-8c5c9-default-rtdb.firebaseio.com/").getReference().child("Booking");
         try {
@@ -70,6 +69,9 @@ public class MainActivity extends AppCompatActivity {
 
                 dbRef.push().setValue(bkg);
                 Toast.makeText(getApplicationContext(), "Details Saved Successful", Toast.LENGTH_SHORT).show();
+
+                Intent intent = new Intent(MainActivity.this,PaymentUi.class);
+                startActivity(intent);
 
 
             }
