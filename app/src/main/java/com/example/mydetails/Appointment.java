@@ -3,8 +3,8 @@ package com.example.mydetails;
 public class Appointment {
     private String name;
     private Integer conNo;
-    private Integer date;
-    private Integer time;
+    private String date;
+    private String time;
     private String reason;
     private String note;
 
@@ -27,19 +27,19 @@ public class Appointment {
         this.conNo = conNo;
     }
 
-    public Integer getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(Integer date) {
+    public void setDate(String date) {
         this.date = date;
     }
 
-    public Integer getTime() {
+    public String getTime() {
         return time;
     }
 
-    public void setTime(Integer time) {
+    public void setTime(String time) {
         this.time = time;
     }
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".AddAppointment">
 
     <TextView
         android:id="@+id/textView"
@@ -35,7 +35,7 @@
         app:layout_constraintVertical_bias="0.328" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/cpConNo"
         android:layout_width="203dp"
         android:layout_height="52dp"
         android:ems="10"
@@ -48,7 +48,7 @@
         app:layout_constraintVertical_bias="0.322" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress3"
+        android:id="@+id/cpName"
         android:layout_width="204dp"
         android:layout_height="50dp"
         android:ems="10"
@@ -61,7 +61,7 @@
         app:layout_constraintVertical_bias="0.23" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/addApBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="addAppointment"
@@ -72,7 +72,20 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.96" />
+        app:layout_constraintVertical_bias="0.865" />
+
+    <Button
+        android:id="@+id/viewApBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addAppointment"
+        android:text="View Appointments"
+        app:backgroundTint="#EF5350"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.93" />
 
     <ImageButton
         android:id="@+id/imageButton3"
@@ -157,7 +170,7 @@
         app:layout_constraintVertical_bias="0.736" />
 
     <EditText
-        android:id="@+id/editTextDate"
+        android:id="@+id/apDate"
         android:layout_width="201dp"
         android:layout_height="49dp"
         android:ems="10"
@@ -170,7 +183,7 @@
         app:layout_constraintVertical_bias="0.419" />
 
     <EditText
-        android:id="@+id/editTextTime"
+        android:id="@+id/apTime"
         android:layout_width="199dp"
         android:layout_height="58dp"
         android:ems="10"
@@ -183,7 +196,7 @@
         app:layout_constraintVertical_bias="0.523" />
 
     <EditText
-        android:id="@+id/editTextTextMultiLine"
+        android:id="@+id/apReason"
         android:layout_width="204dp"
         android:layout_height="49dp"
         android:ems="10"
@@ -197,7 +210,7 @@
         app:layout_constraintVertical_bias="0.631" />
 
     <EditText
-        android:id="@+id/editTextTextMultiLine2"
+        android:id="@+id/apNote"
         android:layout_width="205dp"
         android:layout_height="49dp"
         android:ems="10"

@@ -13,7 +13,7 @@
         <activity android:name=".EditAppoinment" />
         <activity android:name=".AppointmentView" />
         <activity android:name=".MyAppointments" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".AddAppointment">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
