@@ -16,35 +16,20 @@
         android:text="FeedBack"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.251"
+        app:layout_constraintHorizontal_bias="0.235"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.931" />
+        app:layout_constraintVertical_bias="0.887" />
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="35dp"
         android:layout_height="35dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.183"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.818"
         app:srcCompat="@drawable/feedback_24" />
-
-    <TextView
-        android:id="@+id/feedback"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Feedback"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.549"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.821" />
 
     <View
         android:id="@+id/wave"
@@ -190,10 +175,10 @@
         app:backgroundTint="#EF5350"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.746"
+        app:layout_constraintHorizontal_bias="0.769"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.931" />
+        app:layout_constraintVertical_bias="0.887" />
 
     <TextView
         android:id="@+id/View7"
