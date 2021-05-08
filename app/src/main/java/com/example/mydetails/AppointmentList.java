@@ -42,6 +42,8 @@ public class AppointmentList extends AppCompatActivity {
             @Override
             public void onChildChanged(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
 
+                arrayAdapter.notifyDataSetChanged();
+
             }
 
             @Override
