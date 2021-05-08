@@ -18,9 +18,16 @@ public class Home extends AppCompatActivity {
         startActivity(i);
     }
 
-    public void Packages(View view){
+
+    public void WeddingPackages(View view){
         Intent i =new Intent(this,PkList.class);
         startActivity(i);
     }
+
+    public void HcPackages(View view){
+        Intent i =new Intent(this,HcPkList.class);
+        startActivity(i);
+    }
+
 
 }

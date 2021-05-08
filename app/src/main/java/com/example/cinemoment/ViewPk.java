@@ -27,8 +27,9 @@ public class ViewPk extends AppCompatActivity {
     TextView txtNoOfCam;
     TextView txtDrone;
     Button pkDeleteBtn;
+    Button pkEditBtn;
 
-    DatabaseReference dbRef;
+    DatabaseReference dbRef , dataRef;
 
 
     @Override
@@ -43,11 +44,12 @@ public class ViewPk extends AppCompatActivity {
         txtNoOfCam = findViewById(R.id.textViewNoOfCam);
         txtDrone = findViewById(R.id.textViewDrone);
         pkDeleteBtn = findViewById(R.id.pkDeleteBtn);
+        pkEditBtn = findViewById(R.id.pkEditBtn);
 
         dbRef = FirebaseDatabase.getInstance().getReference().child("Package");
 
         String PkKey = getIntent().getStringExtra("PkKey");
-        dbRef = FirebaseDatabase.getInstance().getReference().child("Package").child(PkKey);
+        dataRef = FirebaseDatabase.getInstance().getReference().child("Package").child(PkKey);
 
         dbRef.child(PkKey).addValueEventListener(new ValueEventListener() {
             @Override
@@ -82,7 +84,7 @@ public class ViewPk extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                dbRef.removeValue().addOnSuccessListener(new OnSuccessListener<Void>() {
+                dataRef.removeValue().addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {
                         Toast.makeText(getApplicationContext(), "Successfully Deleted", Toast.LENGTH_SHORT).show();
@@ -94,4 +96,10 @@ public class ViewPk extends AppCompatActivity {
         });
 
     }
+
+    public void editPackage(View view){
+        Intent i =new Intent(this,EditPackage.class);
+        startActivity(i);
+    }
 }
+

@@ -57,6 +57,8 @@ public class AddPackage extends AppCompatActivity {
 
 
         try {
+
+
             if(TextUtils.isEmpty(pkType.getSelectedItem().toString()))
                 Toast.makeText(getApplicationContext(), "Please Select Package Type", Toast.LENGTH_SHORT).show();
             else if(TextUtils.isEmpty(pkName.getText().toString()))
@@ -89,6 +91,8 @@ public class AddPackage extends AppCompatActivity {
 
                     Intent i =new Intent(this,PkList.class);
                     startActivity(i);
+
+
 
             }
         }

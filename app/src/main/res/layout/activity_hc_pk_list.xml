@@ -4,8 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PkList">
+    tools:context=".HcPkList">
 
+    <TextView
+
+        android:id="@+id/HcPkListTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HOMECOMING PACKAGES"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:flow_horizontalAlign="center"
+        app:flow_verticalAlign="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.092" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -45,26 +61,12 @@
         app:layout_constraintVertical_bias="0.019"
         app:srcCompat="@drawable/back" />
 
-    <TextView
-        android:id="@+id/WdPkListTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="WEDDING PACKAGES"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:flow_horizontalAlign="center"
-        app:flow_verticalAlign="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.092" />
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/pkRecyclerView"
-        android:layout_width="300dp"
-        android:layout_height="270dp"
+        android:layout_width="295dp"
+        android:layout_height="374dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -87,5 +89,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/pkRecyclerView"
         app:layout_constraintVertical_bias="1.0" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@color/design_default_color_primary"
-    android:layout_marginBottom="8dp"
+    android:layout_height="75dp"
+    android:layout_marginBottom="10dp"
+    android:background="#EF5350"
+    android:orientation="vertical"
     >
 
 
@@ -14,12 +13,12 @@
         android:id="@+id/textViewSinglePk"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Package"
-        android:textSize="25dp"
-        android:textColor="@color/white"
-        android:textStyle="bold"
         android:gravity="center"
-        />
+        android:text="Package"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp" />
 
 
 </RelativeLayout>
