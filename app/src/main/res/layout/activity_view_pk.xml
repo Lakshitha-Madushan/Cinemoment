@@ -151,7 +151,7 @@
         app:layout_constraintVertical_bias="0.215" />
 
     <Button
-        android:id="@+id/button14"
+        android:id="@+id/pkEditBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="editPackage"
@@ -165,7 +165,7 @@
         app:layout_constraintVertical_bias="0.909" />
 
     <Button
-        android:id="@+id/button15"
+        android:id="@+id/pkDeleteBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/delete"

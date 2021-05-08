@@ -3,10 +3,15 @@ package com.example.cinemoment;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -21,6 +26,7 @@ public class ViewPk extends AppCompatActivity {
     TextView txtPkAmount;
     TextView txtNoOfCam;
     TextView txtDrone;
+    Button pkDeleteBtn;
 
     DatabaseReference dbRef;
 
@@ -36,10 +42,12 @@ public class ViewPk extends AppCompatActivity {
         txtPkAmount = findViewById(R.id.textViewPkAmount);
         txtNoOfCam = findViewById(R.id.textViewNoOfCam);
         txtDrone = findViewById(R.id.textViewDrone);
+        pkDeleteBtn = findViewById(R.id.pkDeleteBtn);
 
         dbRef = FirebaseDatabase.getInstance().getReference().child("Package");
 
         String PkKey = getIntent().getStringExtra("PkKey");
+        dbRef = FirebaseDatabase.getInstance().getReference().child("Package").child(PkKey);
 
         dbRef.child(PkKey).addValueEventListener(new ValueEventListener() {
             @Override
@@ -67,6 +75,21 @@ public class ViewPk extends AppCompatActivity {
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
 
+            }
+        });
+
+        pkDeleteBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                dbRef.removeValue().addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void aVoid) {
+                        Toast.makeText(getApplicationContext(), "Successfully Deleted", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(getApplicationContext(),PkList.class));
+
+                    }
+                });
             }
         });
 
