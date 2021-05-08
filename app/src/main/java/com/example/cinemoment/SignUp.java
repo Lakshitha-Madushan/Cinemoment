@@ -65,7 +65,7 @@ public class SignUp extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(), "Data saved successfully", Toast.LENGTH_SHORT).show();
                         clearControls();
 
-                        Intent Intent = new Intent(SignUp.this, MyProfile.class);
+                        Intent Intent = new Intent(SignUp.this, SignIn.class);
                         startActivity(Intent);
 
                     }
