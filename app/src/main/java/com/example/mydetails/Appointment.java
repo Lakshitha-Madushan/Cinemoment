@@ -1,61 +1,61 @@
 package com.example.mydetails;
 
 public class Appointment {
-    private String name;
-    private Integer conNo;
-    private String date;
-    private String time;
-    private String reason;
-    private String note;
+    private String cpName;
+    private Integer cpConNo;
+    private String apDate;
+    private String apTime;
+    private String apReason;
+    private String apNote;
 
     public Appointment() {
     }
 
     public String getName() {
-        return name;
+        return cpName;
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.cpName = name;
     }
 
     public Integer getConNo() {
-        return conNo;
+        return cpConNo;
     }
 
     public void setConNo(Integer conNo) {
-        this.conNo = conNo;
+        this.cpConNo = conNo;
     }
 
     public String getDate() {
-        return date;
+        return apDate;
     }
 
     public void setDate(String date) {
-        this.date = date;
+        this.apDate = date;
     }
 
     public String getTime() {
-        return time;
+        return apTime;
     }
 
     public void setTime(String time) {
-        this.time = time;
+        this.apTime = time;
     }
 
     public String getReason() {
-        return reason;
+        return apReason;
     }
 
     public void setReason(String reason) {
-        this.reason = reason;
+        this.apReason = reason;
     }
 
     public String getNote() {
-        return note;
+        return apNote;
     }
 
     public void setNote(String note) {
-        this.note = note;
+        this.apNote = note;
     }
 }
