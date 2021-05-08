@@ -85,6 +85,11 @@ public class AddPackage extends AppCompatActivity {
 
                 Toast.makeText(getApplicationContext(), "Successfully Inserted", Toast.LENGTH_SHORT).show();
                 clearControls();
+
+
+                    Intent i =new Intent(this,PkList.class);
+                    startActivity(i);
+
             }
         }
         catch (NumberFormatException e){
@@ -104,9 +109,6 @@ public class AddPackage extends AppCompatActivity {
         pkAmount.setText("");
     }
 
-    public void viewPackages(View view){
-        Intent i =new Intent(this,ViewPackage.class);
-        startActivity(i);
-    }
+
 
 }
