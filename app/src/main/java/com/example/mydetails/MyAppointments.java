@@ -14,7 +14,7 @@ public class MyAppointments extends AppCompatActivity {
         setContentView(R.layout.activity_my_appointments);
     }
     public void ViewAppointment(View view){
-        Intent i =new Intent(this,AppointmentView.class);
+        Intent i =new Intent(this, AppointmentView.class);
         startActivity(i);
     }
 
