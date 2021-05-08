@@ -7,6 +7,8 @@ public class CustomerCm {
     private String password;
     private int conNum;
 
+    private String feedback;
+
     public CustomerCm() {
 
     }
@@ -47,7 +49,17 @@ public class CustomerCm {
         return conNum;
     }
 
-    public void setConNum(int phnumber) {
-        this.conNum = phnumber;
+    public void setConNum(int conNum) {
+        this.conNum = conNum;
     }
+
+
+    public String getFeedback() {
+        return feedback;
+    }
+
+    public void setFeedback(String feedback) {
+        this.feedback = password;
+    }
+
 }
