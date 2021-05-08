@@ -58,4 +58,8 @@ public class Appointment {
     public void setNote(String note) {
         this.apNote = note;
     }
+
+    public String toString(){
+        return this.cpName + "\n" + "Contact Number : " + cpConNo + "\n" + "Appointment Date : " + apDate + "\n" + "Appointment Time : " + apTime ;
+    }
 }

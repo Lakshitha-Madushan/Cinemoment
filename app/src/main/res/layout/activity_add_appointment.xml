@@ -78,7 +78,7 @@
         android:id="@+id/viewApBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="addAppointment"
+        android:onClick="MyAppointment"
         android:text="View Appointments"
         app:backgroundTint="#EF5350"
         app:layout_constraintBottom_toBottomOf="parent"

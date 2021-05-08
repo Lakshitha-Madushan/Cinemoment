@@ -35,10 +35,10 @@ public class AddAppointment extends AppCompatActivity {
         addApBtn = findViewById(R.id.addApBtn);
 
         ap = new Appointment();
+    }
 
-        addApBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+
+            public void addAppointment (View view) {
                 dbRef = FirebaseDatabase.getInstance().getReference().child("Appointment");
                 try{
                     if(TextUtils.isEmpty(txtCpName.getText().toString()))
@@ -64,6 +64,9 @@ public class AddAppointment extends AppCompatActivity {
                         dbRef.push().setValue(ap);
                         Toast.makeText(getApplicationContext(), "Data Saved Successfully", Toast.LENGTH_SHORT).show();
                         clearControls();
+
+                        Intent i =new Intent(this, AppointmentList.class);
+                        startActivity(i);
                     }
 
                 }
@@ -71,9 +74,8 @@ public class AddAppointment extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Invalid Entry", Toast.LENGTH_SHORT).show();
                 }
             }
-        });
 
-    }
+
 
     private void clearControls(){
         txtCpName.setText("");
@@ -84,12 +86,9 @@ public class AddAppointment extends AppCompatActivity {
         txtApNote.setText("");
     }
 
-    public void addAppointment(View view){
-        Intent i =new Intent(this,MyAppointments.class);
-        startActivity(i);
-    }
 
-    public void viewAppointment(View view){
+
+    public void MyAppointment(View view){
         Intent i =new Intent(this,MyAppointments.class);
         startActivity(i);
     }

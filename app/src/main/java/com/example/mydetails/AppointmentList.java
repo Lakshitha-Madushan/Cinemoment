@@ -18,20 +18,23 @@ import java.util.ArrayList;
 
 public class AppointmentList extends AppCompatActivity {
 
+    DatabaseReference dbRef;
+    ListView listView;
+    FirebaseDatabase firebaseDatabase;
+    ArrayList<String> arrayList = new ArrayList<>();
+    ArrayAdapter<String> arrayAdapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        DatabaseReference databaseReference;
-        ListView listView;
-        ArrayList<String> arrayList = new ArrayList<>();
-        ArrayAdapter<String> arrayAdapter;
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_appointment_list);
-        databaseReference = FirebaseDatabase.getInstance().getReference("Appointment");
+
+        dbRef = firebaseDatabase.getInstance().getReference("Appointment");
+
         listView = (ListView) findViewById(R.id.apListView);
-        arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1);
+        arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,arrayList);
         listView.setAdapter(arrayAdapter);
-        databaseReference.addChildEventListener(new ChildEventListener() {
+        dbRef.addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
                 String value = snapshot.getValue(Appointment.class).toString();
@@ -42,7 +45,6 @@ public class AppointmentList extends AppCompatActivity {
             @Override
             public void onChildChanged(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
 
-                arrayAdapter.notifyDataSetChanged();
 
             }
 
