@@ -11,52 +11,52 @@ public class Appointment {
     public Appointment() {
     }
 
-    public String getName() {
+    public String getCpName() {
         return cpName;
     }
 
-    public void setName(String name) {
-        this.cpName = name;
+    public void setCpName(String cpName) {
+        this.cpName = cpName;
     }
 
-    public Integer getConNo() {
+    public Integer getCpConNo() {
         return cpConNo;
     }
 
-    public void setConNo(Integer conNo) {
-        this.cpConNo = conNo;
+    public void setCpConNo(Integer cpConNo) {
+        this.cpConNo = cpConNo;
     }
 
-    public String getDate() {
+    public String getApDate() {
         return apDate;
     }
 
-    public void setDate(String date) {
-        this.apDate = date;
+    public void setApDate(String apDate) {
+        this.apDate = apDate;
     }
 
-    public String getTime() {
+    public String getApTime() {
         return apTime;
     }
 
-    public void setTime(String time) {
-        this.apTime = time;
+    public void setApTime(String apTime) {
+        this.apTime = apTime;
     }
 
-    public String getReason() {
+    public String getApReason() {
         return apReason;
     }
 
-    public void setReason(String reason) {
-        this.apReason = reason;
+    public void setApReason(String apReason) {
+        this.apReason = apReason;
     }
 
-    public String getNote() {
+    public String getApNote() {
         return apNote;
     }
 
-    public void setNote(String note) {
-        this.apNote = note;
+    public void setApNote(String apNote) {
+        this.apNote = apNote;
     }
 
     public String toString(){

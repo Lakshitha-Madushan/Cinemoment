@@ -54,18 +54,18 @@ public class AddAppointment extends AppCompatActivity {
 
 
                     else{
-                        ap.setName(txtCpName.getText().toString().trim());
-                        ap.setConNo(Integer.parseInt(txtCpConNo.getText().toString().trim()));
-                        ap.setDate(txtApDate.getText().toString().trim());
-                        ap.setTime(txtApTime.getText().toString().trim());
-                        ap.setReason(txtApReason.getText().toString().trim());
-                        ap.setNote(txtApNote.getText().toString().trim());
+                        ap.setCpName(txtCpName.getText().toString().trim());
+                        ap.setCpConNo(Integer.parseInt(txtCpConNo.getText().toString().trim()));
+                        ap.setApDate(txtApDate.getText().toString().trim());
+                        ap.setApTime(txtApTime.getText().toString().trim());
+                        ap.setApReason(txtApReason.getText().toString().trim());
+                        ap.setApNote(txtApNote.getText().toString().trim());
 
                         dbRef.push().setValue(ap);
                         Toast.makeText(getApplicationContext(), "Data Saved Successfully", Toast.LENGTH_SHORT).show();
                         clearControls();
 
-                        Intent i =new Intent(this, AppointmentList.class);
+                        Intent i =new Intent(this, AptList.class);
                         startActivity(i);
                     }
 
@@ -89,7 +89,7 @@ public class AddAppointment extends AppCompatActivity {
 
 
     public void MyAppointment(View view){
-        Intent i =new Intent(this,MyAppointments.class);
+        Intent i =new Intent(this,AptList.class);
         startActivity(i);
     }
 
