@@ -15,7 +15,7 @@ public class WeddingPackages extends AppCompatActivity {
     }
 
     public void GoldPackage(View view){
-        Intent i =new Intent(this,ViewPackage.class);
+        Intent i =new Intent(this,ViewPk.class);
         startActivity(i);
     }
 }
