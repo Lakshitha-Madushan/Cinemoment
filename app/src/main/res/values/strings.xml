@@ -16,7 +16,7 @@
     <string name="inputTime">12.12</string>
     <string name="address">Address</string>
     <string name="agenda">Agenda</string>
-    <string name="button3">Book Now</string>
+    <string name="button3">Upload Paid Slip</string>
     <string name="menubtn2">Button</string>
     <string name="titlepayment">PAYMENT</string>
     <string name="subtitle1Pay">Your Package Details</string>
@@ -29,4 +29,13 @@
     <string name="package_price">Package Price...</string>
     <string name="pAdvance">Advance Payment...</string>
     <string name="viewPdetails">View Package Details</string>
+    <string name="paymentText">Payment Details</string>
+    <string name="crdNum">Insert Card Number</string>
+    <string name="iCrdName">Insert Full Name</string>
+    <string name="iCrdEdate">Insert Expire Date</string>
+    <string name="button6">Card Payment</string>
+    <string name="completeBooking">Book Now</string>
+    <string name="home">Home</string>
+    <string name="my_bookings">MY Bookings</string>
+    <string name="mBooking">My Bookings</string>
 </resources>
