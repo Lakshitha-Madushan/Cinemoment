@@ -51,6 +51,14 @@ public class MyBookingsUi extends AppCompatActivity {
             @Override
             protected void onBindViewHolder(@NonNull MyViewHolder holder, int position, @NonNull BookingModel model) {
                 holder.textView.setText(model.getDate());
+                holder.v.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(MyBookingsUi.this,ViewBookingActivity.class);
+                        intent.putExtra("BookingKey",getRef(position).getKey());
+                        startActivity(intent);
+                    }
+                });
 
             }
 

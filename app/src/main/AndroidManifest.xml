@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CINEMOMENT">
-        <activity android:name=".MyBookingsUi"></activity>
+        <activity android:name=".ViewBookingActivity"></activity>
+        <activity android:name=".MyBookingsUi" />
         <activity android:name=".BookingSuccessUi" />
         <activity android:name=".PaymentUi" />
         <activity android:name=".MainActivity">
