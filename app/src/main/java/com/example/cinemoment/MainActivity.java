@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     EditText txtGrmName, txtBrdName, txtContNo, txtDate, txtTime, txtAddress, txtAgenda;
     Button btnBook;
     DatabaseReference dbRef;
-    Booking bkg;
+    BookingModel bkg;
 
 
     @Override
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
         btnBook = findViewById(R.id.button4);
 
-        bkg = new Booking();
+        bkg = new BookingModel();
     }
 
 

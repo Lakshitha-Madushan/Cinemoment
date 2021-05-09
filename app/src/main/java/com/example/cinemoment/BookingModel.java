@@ -2,7 +2,7 @@ package com.example.cinemoment;
 
 import java.util.Date;
 
-public class Booking {
+public class BookingModel {
 
     private String grmName;
     private String brdName;
@@ -12,7 +12,7 @@ public class Booking {
     private String address;
     private String agenda;
 
-    public Booking() {
+    public BookingModel() {
 
     }
 
