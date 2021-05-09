@@ -19,8 +19,6 @@ public class MainActivity extends AppCompatActivity {
     Button btnBook;
     DatabaseReference dbRef;
     BookingModel bkg;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,16 +31,10 @@ public class MainActivity extends AppCompatActivity {
         txtTime = findViewById(R.id.inputTime);
         txtAddress = findViewById(R.id.inputAddress);
         txtAgenda = findViewById(R.id.inputAgenda);
-
         btnBook = findViewById(R.id.button4);
-
         bkg = new BookingModel();
     }
-
-
     public void onClick(View view) {
-
-
         dbRef = FirebaseDatabase.getInstance("https://cinemoment-8c5c9-default-rtdb.firebaseio.com/").getReference().child("Booking");
         try {
             if (TextUtils.isEmpty(txtGrmName.getText().toString()))
@@ -58,7 +50,6 @@ public class MainActivity extends AppCompatActivity {
             else if (TextUtils.isEmpty(txtAddress.getText().toString()))
                 Toast.makeText(getApplicationContext(), "Please Enter Venue", Toast.LENGTH_SHORT).show();
             else {
-
                 bkg.setGrmName(txtGrmName.getText().toString().trim());
                 bkg.setBrdName(txtBrdName.getText().toString().trim());
                 bkg.setContact(Integer.parseInt(txtContNo.getText().toString().trim()));
@@ -72,14 +63,10 @@ public class MainActivity extends AppCompatActivity {
 
                 Intent intent = new Intent(MainActivity.this,PaymentUi.class);
                 startActivity(intent);
-
-
             }
-
-
         } catch (NumberFormatException e) {
 
-            Toast.makeText(getApplicationContext(), "Please enter valid contact #", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Please Insert Details..", Toast.LENGTH_SHORT).show();
             clearControls();
         }
 

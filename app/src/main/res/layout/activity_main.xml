@@ -20,10 +20,10 @@
         app:iconTint="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button3"
-        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.01" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/button3"
@@ -37,7 +37,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.01" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/Title"
@@ -192,24 +192,26 @@
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="113dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="12dp"
+        android:layout_width="119dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="8dp"
         android:onClick="onClick"
         android:text="@string/button3"
         android:textColorLink="#E91E63"
         app:backgroundTint="#E91E63"
         app:layout_constraintEnd_toStartOf="@+id/button5"
-        app:layout_constraintHorizontal_bias="0.711"
+        app:layout_constraintHorizontal_bias="0.681"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputAgenda" />
+        app:layout_constraintTop_toBottomOf="@+id/inputAgenda"
+        android:layout_marginRight="40dp"
+        />
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="127dp"
-        android:layout_height="62dp"
-        android:layout_marginEnd="56dp"
-        android:layout_marginRight="56dp"
+        android:layout_width="136dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
         android:onClick="onClick"
         android:text="@string/button6"
         android:textColorLink="#E91E63"
@@ -217,6 +219,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inputAgenda"
-        app:layout_constraintVertical_bias="0.052" />
+        app:layout_constraintVertical_bias="0.042"
+        android:layout_marginTop="3dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

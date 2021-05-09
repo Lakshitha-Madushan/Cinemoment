@@ -38,4 +38,7 @@
     <string name="home">Home</string>
     <string name="my_bookings">MY Bookings</string>
     <string name="mBooking">My Bookings</string>
+    <string name="booking_success">Booking Success</string>
+    <string name="your_booking_is_successfully_added">Your Booking Is Successfully Added</string>
+    <string name="thank_you_for_choosing_us_to_capture_your_moment">Thank You For Choosing Us To Capture Your Moment</string>
 </resources>

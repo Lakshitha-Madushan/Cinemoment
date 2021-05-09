@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CINEMOMENT">
         <activity android:name=".ViewBookingActivity"></activity>
-        <activity android:name=".MyBookingsUi" />
+        <activity android:name=".MyBookingsUi" android:windowSoftInputMode="stateHidden" />
         <activity android:name=".BookingSuccessUi" />
         <activity android:name=".PaymentUi" />
         <activity android:name=".MainActivity">

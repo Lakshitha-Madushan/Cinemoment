@@ -5,30 +5,75 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     tools:context=".ViewBookingActivity">
+    <Button
+        android:id="@+id/backbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:clickable="true"
+        android:focusable="true"
+        app:backgroundTint="#FFFFFF"
+        app:backgroundTintMode="add"
+        app:icon="@drawable/backbtn1"
+        app:iconTint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        app:backgroundTint="#FFFFFF"
+        app:icon="@drawable/menubtn"
+        app:iconTint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="40dp"
+        android:text="MY BOOKING"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
 
     <TextView
         android:id="@+id/textView_single_view_activity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:background="@android:color/holo_red_light"
+        android:layout_below="@+id/title2"
+
+        android:layout_marginTop="100dp"
         android:gravity="center"
+
         android:text="Groom Name"
-        android:textColor="@color/common_google_signin_btn_text_dark_focused"
-        android:textSize="24dp"
-        android:textStyle="bold"
-        />
+
+        android:textSize="18dp" />
+
     <TextView
         android:id="@+id/textView_single_view_activity2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:background="@android:color/holo_red_light"
+
         android:gravity="center"
         android:text="Bride Name"
-        android:textColor="@color/common_google_signin_btn_text_dark_focused"
-        android:textSize="24dp"
-        android:textStyle="bold"
+
+        android:textSize="18dp"
+
         android:layout_below="@id/textView_single_view_activity"
         />
     <TextView
@@ -36,70 +81,70 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:background="@android:color/holo_red_light"
+
         android:gravity="center"
         android:text="Contact"
-        android:textColor="@color/common_google_signin_btn_text_dark_focused"
-        android:textSize="24dp"
-        android:textStyle="bold"
+        android:textSize="18dp"
+
         android:layout_below="@id/textView_single_view_activity2"/>
     <TextView
         android:id="@+id/textView_single_view_activity4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:background="@android:color/holo_red_light"
+
         android:gravity="center"
         android:text="Date"
-        android:textColor="@color/common_google_signin_btn_text_dark_focused"
-        android:textSize="24dp"
-        android:textStyle="bold"
+
+        android:textSize="18dp"
+
         android:layout_below="@id/textView_single_view_activity3"/>
     <TextView
         android:id="@+id/textView_single_view_activity5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:background="@android:color/holo_red_light"
+
         android:gravity="center"
         android:text="Time"
-        android:textColor="@color/common_google_signin_btn_text_dark_focused"
-        android:textSize="24dp"
-        android:textStyle="bold"
+
+        android:textSize="18dp"
+
         android:layout_below="@id/textView_single_view_activity4"/>
     <TextView
         android:id="@+id/textView_single_view_activity6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:background="@android:color/holo_red_light"
+
         android:gravity="center"
         android:text="Address"
-        android:textColor="@color/common_google_signin_btn_text_dark_focused"
-        android:textSize="24dp"
-        android:textStyle="bold"
+        android:textSize="18dp"
+
         android:layout_below="@id/textView_single_view_activity5"/>
     <TextView
         android:id="@+id/textView_single_view_activity7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:background="@android:color/holo_red_light"
+
         android:gravity="center"
         android:text="Agenda"
-        android:textColor="@color/common_google_signin_btn_text_dark_focused"
-        android:textSize="24dp"
-        android:textStyle="bold"
+
+        android:textSize="18dp"
+
         android:layout_below="@id/textView_single_view_activity6"/>
+
     <Button
+        android:id="@+id/btnDelete"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btnDelete"
-        android:text="Delete"
         android:layout_below="@+id/textView_single_view_activity6"
         android:layout_marginLeft="40dp"
+        android:layout_marginTop="50dp"
         android:layout_marginRight="40dp"
         android:background="@drawable/btn"
-        android:layout_marginTop="50dp"/>
+        android:text="Delete"
+        app:backgroundTint="#E91E63" />
 
 </RelativeLayout>

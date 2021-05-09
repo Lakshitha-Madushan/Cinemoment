@@ -5,17 +5,52 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MyBookingsUi">
+    <Button
+        android:id="@+id/backbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:clickable="true"
+        android:focusable="true"
+        app:backgroundTint="#FFFFFF"
+        app:backgroundTintMode="add"
+        app:icon="@drawable/backbtn1"
+        app:iconTint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        app:backgroundTint="#FFFFFF"
+        app:icon="@drawable/menubtn"
+        app:iconTint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_alignParentRight="true"/>
 
 
     <TextView
         android:id="@+id/mBooking"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/mBooking"
         android:textColor="#000000"
         android:textSize="24sp"
-        android:layout_marginLeft="140dp"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="60dp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -2,17 +2,19 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <TextView
         android:id="@+id/textView_single_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="BOOKING"
-        android:textSize="18dp"
-        android:textColor="@color/common_google_signin_btn_text_dark_focused"
-        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#E91E63"
         android:gravity="center"
-        android:layout_marginTop="10dp"
-        android:background="@color/common_google_signin_btn_text_light_focused"/>
+        android:text="BOOKING"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
 
 

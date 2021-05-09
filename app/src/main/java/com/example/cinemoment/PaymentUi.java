@@ -37,8 +37,6 @@ public class PaymentUi extends AppCompatActivity {
     boolean isImageAdded = false;
     DatabaseReference dbRef;
     StorageReference storageRef;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,14 +47,10 @@ public class PaymentUi extends AppCompatActivity {
         textViewProgress = findViewById(R.id.textViewProgress);
         progressBar = findViewById(R.id.progressBar);
         btnUpload = findViewById(R.id.btnUpload);
-
         textViewProgress.setVisibility(View.GONE);
         progressBar.setVisibility(View.GONE);
-
         dbRef = FirebaseDatabase.getInstance("https://cinemoment-8c5c9-default-rtdb.firebaseio.com/").getReference().child("Payment");
         storageRef = FirebaseStorage.getInstance("gs://cinemoment-8c5c9.appspot.com/").getReference().child("PaySlip");
-
-
 
         imageViewAdd.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -75,13 +69,9 @@ public class PaymentUi extends AppCompatActivity {
                 {
                     uploadImage(payer);
                 }
-
             }
         });
-
-
     }
-
     private void uploadImage(final String payer) {
         textViewProgress.setVisibility(View.VISIBLE);
         progressBar.setVisibility(View.VISIBLE);
@@ -102,10 +92,8 @@ public class PaymentUi extends AppCompatActivity {
                                 Toast.makeText(PaymentUi.this, "Payment Method Successfully", Toast.LENGTH_SHORT).show();
                             }
                         });
-
                     }
                 });
-
             }
         }).addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
             @Override
@@ -113,12 +101,9 @@ public class PaymentUi extends AppCompatActivity {
                 double progress = (taskSnapshot.getBytesTransferred()*100)/taskSnapshot.getTotalByteCount();
                 progressBar.setProgress((int) progress);
                 textViewProgress.setText(progress+" %");
-
             }
         });
-
     }
-
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -127,7 +112,6 @@ public class PaymentUi extends AppCompatActivity {
             isImageAdded = true;
             imageViewAdd.setImageURI(imageUri);
         }
-
     }
     public void successful(View view)
     {
