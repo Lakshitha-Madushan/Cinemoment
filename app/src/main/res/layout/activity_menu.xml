@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/background_light"
-    android:onClick="Feedback"
-    tools:context=".MainActivity">
+    tools:context=".MenuCm">
 
     <Button
         android:id="@+id/button5"
@@ -14,12 +13,13 @@
         android:layout_height="wrap_content"
         android:onClick="Feedback"
         android:text="FeedBack"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.235"
+        app:layout_constraintHorizontal_bias="0.296"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.887" />
+        app:layout_constraintVertical_bias="0.901" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -171,14 +171,14 @@
         android:textColorHighlight="@color/cardview_dark_background"
         android:textColorHint="@color/black"
         android:textColorLink="@color/black"
-        android:textSize="16sp"
+        android:textSize="12sp"
         app:backgroundTint="#EF5350"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.769"
+        app:layout_constraintHorizontal_bias="0.752"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.887" />
+        app:layout_constraintVertical_bias="0.901" />
 
     <TextView
         android:id="@+id/View7"

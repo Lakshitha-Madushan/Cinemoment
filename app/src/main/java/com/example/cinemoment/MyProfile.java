@@ -1,7 +1,9 @@
 package com.example.cinemoment;
 
-import androidx.annotation.NonNull;
+
 import androidx.appcompat.app.AppCompatActivity;
+
+
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,34 +19,23 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 public class MyProfile extends AppCompatActivity {
-    EditText txtfname, txtlname, txtemail, txtconNum;
-    Button btnView;
-    DatabaseReference dbRef;
-    CustomerCm cus;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_profile);
 
-
-
-
-
-
-
-
-
-
-
-
-
-    }
-
+            }
 
 
     public void Edit(View view) {
         Intent i = new Intent(this, UpdateProfile.class);
+        startActivity(i);
+    }
+
+
+    public void Customer (View view) {
+        Intent i = new Intent(this, CustomerFeedback.class);
         startActivity(i);
     }
 

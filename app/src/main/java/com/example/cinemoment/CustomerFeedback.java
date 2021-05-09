@@ -38,7 +38,7 @@ public class CustomerFeedback extends AppCompatActivity {
                     if (TextUtils.isEmpty(txtfeedback.getText().toString()))
                         Toast.makeText(getApplicationContext(), "Enter your Feedback", Toast.LENGTH_SHORT).show();
                     else {
-                        cus.setFname(txtfeedback.getText().toString().trim());
+                        cus.setFeedback(txtfeedback.getText().toString().trim());
                         dbRef.push().setValue(cus);
                         Toast.makeText(getApplicationContext(), "Thank you for your Feedback", Toast.LENGTH_SHORT).show();
                         clearControls();

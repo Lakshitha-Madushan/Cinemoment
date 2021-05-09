@@ -26,7 +26,7 @@ public class SignUp extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
 
-        txtfname = findViewById(R.id.fname);
+        txtfname = findViewById(R.id.fname1);
         txtlname = findViewById(R.id.lname);
         txtconNum = findViewById(R.id.num);
         txtemail  = findViewById(R.id.email4);
@@ -65,7 +65,7 @@ public class SignUp extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(), "Data saved successfully", Toast.LENGTH_SHORT).show();
                         clearControls();
 
-                        Intent Intent = new Intent(SignUp.this, SignIn.class);
+                        Intent Intent = new Intent(SignUp.this, MainActivity.class);
                         startActivity(Intent);
 
                     }

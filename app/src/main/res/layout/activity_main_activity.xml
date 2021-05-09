@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:onClick="LogIn"
-    tools:context=".SignIn">
+    tools:context=".MainActivity">
 
     <View
         android:id="@+id/wave3"
