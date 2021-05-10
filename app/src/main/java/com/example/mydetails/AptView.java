@@ -18,7 +18,14 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 public class AptView extends AppCompatActivity {
-    TextView textView;
+
+    TextView textAptReason;
+    TextView textCpName;
+    TextView textCpConNo;
+    TextView textAptDate;
+    TextView textAptTime;
+    TextView textAptNote;
+
     Button btnDelete;
 
     DatabaseReference dbRef,DataRef;
@@ -28,7 +35,13 @@ public class AptView extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_apt_view);
 
-        textView=findViewById(R.id.textView_single_aptview);
+        textAptReason =findViewById(R.id.textViewAptReason);
+        textCpName = findViewById(R.id.textViewCpName);
+        textCpConNo = findViewById(R.id.textViewCpConNo);
+        textAptDate = findViewById(R.id.textViewAptDate);
+        textAptTime = findViewById(R.id.textViewAptTime);
+        textAptNote = findViewById(R.id.textViewAptNote);
+
         btnDelete=findViewById(R.id.btnDelete);
 
         dbRef = FirebaseDatabase.getInstance().getReference().child("Appointment");
@@ -41,9 +54,19 @@ public class AptView extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 if(dataSnapshot.exists())
                 {
+                    String apReason = dataSnapshot.child("apReason").getValue().toString();
+                    String cpName = dataSnapshot.child("cpName").getValue().toString();
+                    String cpConNo = dataSnapshot.child("cpConNo").getValue().toString();
                     String apDate = dataSnapshot.child("apDate").getValue().toString();
+                    String apTime = dataSnapshot.child("apTime").getValue().toString();
+                    String apNote = dataSnapshot.child("apNote").getValue().toString();
 
-                    textView.setText(apDate);
+                    textAptReason.setText(apReason);
+                    textCpName.setText(cpName);
+                    textCpConNo.setText(cpConNo);
+                    textAptDate.setText(apDate);
+                    textAptTime.setText(apTime);
+                    textAptNote.setText(apNote);
                 }
             }
 
@@ -69,5 +92,14 @@ public class AptView extends AppCompatActivity {
         });
     }
 
+    public void EditAppointment(View view){
+        Intent i =new Intent(this,EditAppoinment.class);
+        startActivity(i);
+    }
+
+    public void addReminder(View view){
+        Intent i =new Intent(this,addreminder.class);
+        startActivity(i);
+    }
 
 }

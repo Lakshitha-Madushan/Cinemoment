@@ -34,26 +34,22 @@ public class AptList extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
         recyclerView.setHasFixedSize(true);
 
-
     LoadData();
 }
         private void LoadData(){
-
         options = new FirebaseRecyclerOptions.Builder<Appointment>().setQuery(dbRef,Appointment.class).build();
         adapter = new FirebaseRecyclerAdapter<Appointment, AptViewHolder>(options) {
             @Override
             protected void onBindViewHolder(@NonNull AptViewHolder holder, final int i, @NonNull Appointment model) {
-                holder.textView.setText(model.getApReason());
+                holder.textView.setText(model.getApDate());
                 holder.v.setOnClickListener(new View.OnClickListener(){
               @Override
                     public void onClick(View v){
                      Intent intent = new Intent(AptList.this,AptView.class);
                      intent.putExtra("aptKey", getRef(i).getKey());
                      startActivity(intent);
-
               }
                 });
-
             }
 
             @NonNull

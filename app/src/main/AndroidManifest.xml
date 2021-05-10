@@ -11,11 +11,8 @@
         android:theme="@style/Theme.MyDetails">
         <activity android:name=".AptView"></activity>
         <activity android:name=".AptList"></activity>
-        <activity android:name=".AppointmentList" />
         <activity android:name=".addreminder" />
         <activity android:name=".EditAppoinment" />
-        <activity android:name=".AppointmentView" />
-        <activity android:name=".MyAppointments" />
         <activity android:name=".AddAppointment">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

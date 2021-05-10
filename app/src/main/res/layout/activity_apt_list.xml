@@ -6,6 +6,32 @@
     android:layout_height="match_parent"
     tools:context=".AptList">
 
+    <ImageButton
+        android:id="@+id/imageButton12"
+        android:layout_width="34dp"
+        android:layout_height="28dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.969"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025"
+        app:srcCompat="@drawable/menu" />
+
+    <ImageButton
+        android:id="@+id/imageButton11"
+        android:layout_width="30dp"
+        android:layout_height="28dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.021"
+        app:srcCompat="@drawable/back" />
+
     <TextView
         android:id="@+id/aptListTitle"
         android:layout_width="wrap_content"
@@ -15,18 +41,31 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.092" />
+        app:layout_constraintVertical_bias="0.047" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/aptRecyclerView"
-        android:layout_width="347dp"
-        android:layout_height="478dp"
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="349dp"
+        android:layout_height="257dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/aptListTitle"
+        app:layout_constraintVertical_bias="0.026"
+        app:srcCompat="@drawable/appointment_couple" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/aptRecyclerView"
+        android:layout_width="289dp"
+        android:layout_height="335dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.802">
+
+    </androidx.recyclerview.widget.RecyclerView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
